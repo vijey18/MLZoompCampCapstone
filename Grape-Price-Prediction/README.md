@@ -79,6 +79,12 @@ To set up the project, follow these steps.
       pip install -r requirements.txt
    ```
 
+4. Install the unzip module
+   ```bash
+      sudo apt install unzip
+   ```
+5. Assumptions---> Conda Jupyter is already installed in the Conda Environment.This is needed to run and inspect the Jupyter notebooks.
+
 ## Running the Model Training Script
    ```bash
       cd scripts/
@@ -108,7 +114,7 @@ The streamlit app has sliders each with a min and maximum value. Do adjust the s
 It will output a 'grape_quality' index which is coming from the Regression model of the Custom Gradient boost and 'grape_category' index
 which is coming from the Classification model of the Custom Gradient boost.
 
-# NOTE:- In case the Containerization does not work due to some issues in your system, you can setup the virtual Environment for Python 3.9 as indicated in the section [Environment Setup] and proceed to run the command 'streamlit run app.py' fron the streamlit-app directory to access the same streamlit app without the docker container.
+### NOTE:- In case the Containerization does not work due to some issues in your system, you can setup the virtual Environment for Python 3.9 as indicated in the section [Environment Setup] and proceed to run the command 'streamlit run app.py' fron the streamlit-app directory to access the same streamlit app without the docker container.
 
 # License
 This project is licensed under the **MIT License**. See the [LICENSE](LICENSE) file for details.
