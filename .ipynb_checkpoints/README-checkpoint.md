@@ -56,7 +56,7 @@ To set up the project, follow these steps.
 
 1. Clone the repository at your desired path, then open the folder:
    ```bash
-      git clone https://github.com/yasamangs/Flight-Price-Prediction.git
+      git clone https://github.com/vijey18/MLZoompCampCapstone.git
       cd Flight-Price-Prediction
    ```
 2. Create a Conda environment and activate it:
