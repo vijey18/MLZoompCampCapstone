@@ -56,7 +56,7 @@ To reproduce the results:
 1. **Data Access**: The dataset is available in the repository under the name GRAPE_QUALITY.csv.
 2. **Execution**: Run the Jupyter notebooks for EDA(Not necessary)  (`notebook.ipynb`, `EDA.ipynb`, `ModelTraining.ipynb`, `CustomGradientBoost.ipynb`, `training_pipelineAndFeatImport.ipynb`) and  the training script (`train_pipeline.py`) without errors.
 
-## Environment Setup(Needed to run the Jupyter Notebook, train_pipeline.py AND the streamlit app outside the Docker Environment, if needed)
+## Environment Setup(Needed to run the Jupyter Notebook, train_pipeline.py AND the streamlit app)
 
 #Assumptions
 1.Conda Jupyter is installed and working in the system.
@@ -79,11 +79,10 @@ To set up the project, follow these steps.
       pip install -r requirements.txt
    ```
 
-4. Install the unzip module
+4. Install the unzip module (in case of windows machine with conda, ``` pip install unzip ```
    ```bash
       sudo apt install unzip
    ```
-5. Assumptions---> Conda Jupyter is already installed in the Conda Environment.This is needed to run and inspect the Jupyter notebooks.
 
 ## Running the Model Training Script
    ```bash
@@ -114,7 +113,7 @@ The streamlit app has sliders each with a min and maximum value. Do adjust the s
 It will output a 'grape_quality' index which is coming from the Regression model of the Custom Gradient boost and 'grape_category' index
 which is coming from the Classification model of the Custom Gradient boost.
 
-### NOTE:- In case the Containerization does not work due to some issues in your system, you can setup the virtual Environment for Python 3.9 as indicated in the section [Environment Setup] and proceed to run the command 'streamlit run app.py' fron the streamlit-app directory to access the same streamlit app without the docker container.
+### NOTE:- In case the Containerization does not work due to some issues in your system, you can setup the virtual Environment for Python 3.9 as indicated in the section [Environment Setup] along with executing the train_pipeline.py and proceed to run the command 'streamlit run app.py' fron the streamlit-app directory to access the same streamlit app without the docker container.
 
 # License
 This project is licensed under the **MIT License**. See the [LICENSE](LICENSE) file for details.
