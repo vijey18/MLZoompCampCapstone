@@ -79,7 +79,7 @@ To set up the project, follow these steps.
       pip install -r requirements.txt
    ```
 
-4. Install the unzip module (in case of windows machine with conda, ``` pip install unzip ```
+4. Install the unzip module (in case of windows machine with conda, ``` pip install unzip ```)
    ```bash
       sudo apt install unzip
    ```
